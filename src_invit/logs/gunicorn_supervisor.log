@@ -1,0 +1,363 @@
+Starting invit as ec2-user
+[2015-03-18 06:54:54 +0000] [24501] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:54:54 +0000] [24501] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24501)
+[2015-03-18 06:54:54 +0000] [24501] [INFO] Using worker: sync
+[2015-03-18 06:54:54 +0000] [24508] [INFO] Booting worker with pid: 24508
+[2015-03-18 06:54:54 +0000] [24508] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:54:54 +0000] [24508] [INFO] Worker exiting (pid: 24508)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:54:55 +0000] [24509] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:54:55 +0000] [24509] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24509)
+[2015-03-18 06:54:55 +0000] [24509] [INFO] Using worker: sync
+[2015-03-18 06:54:55 +0000] [24516] [INFO] Booting worker with pid: 24516
+[2015-03-18 06:54:55 +0000] [24516] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:54:55 +0000] [24516] [INFO] Worker exiting (pid: 24516)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:54:58 +0000] [24517] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:54:58 +0000] [24517] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24517)
+[2015-03-18 06:54:58 +0000] [24517] [INFO] Using worker: sync
+[2015-03-18 06:54:58 +0000] [24524] [INFO] Booting worker with pid: 24524
+[2015-03-18 06:54:58 +0000] [24524] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:54:58 +0000] [24524] [INFO] Worker exiting (pid: 24524)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:55:01 +0000] [24527] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:55:01 +0000] [24527] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24527)
+[2015-03-18 06:55:01 +0000] [24527] [INFO] Using worker: sync
+[2015-03-18 06:55:01 +0000] [24534] [INFO] Booting worker with pid: 24534
+[2015-03-18 06:55:01 +0000] [24534] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:55:01 +0000] [24534] [INFO] Worker exiting (pid: 24534)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:57:35 +0000] [24572] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:57:35 +0000] [24572] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24572)
+[2015-03-18 06:57:35 +0000] [24572] [INFO] Using worker: sync
+[2015-03-18 06:57:35 +0000] [24579] [INFO] Booting worker with pid: 24579
+[2015-03-18 06:57:35 +0000] [24579] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:57:35 +0000] [24579] [INFO] Worker exiting (pid: 24579)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2015-03-18 06:57:35 +0000] [24580] [INFO] Booting worker with pid: 24580
+[2015-03-18 06:57:35 +0000] [24580] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:57:35 +0000] [24580] [INFO] Worker exiting (pid: 24580)
+Starting invit as ec2-user
+[2015-03-18 06:57:36 +0000] [24581] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:57:36 +0000] [24581] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24581)
+[2015-03-18 06:57:36 +0000] [24581] [INFO] Using worker: sync
+[2015-03-18 06:57:36 +0000] [24588] [INFO] Booting worker with pid: 24588
+[2015-03-18 06:57:36 +0000] [24588] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:57:36 +0000] [24588] [INFO] Worker exiting (pid: 24588)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:57:39 +0000] [24591] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:57:39 +0000] [24591] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24591)
+[2015-03-18 06:57:39 +0000] [24591] [INFO] Using worker: sync
+[2015-03-18 06:57:39 +0000] [24598] [INFO] Booting worker with pid: 24598
+[2015-03-18 06:57:39 +0000] [24598] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:57:39 +0000] [24598] [INFO] Worker exiting (pid: 24598)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Starting invit as ec2-user
+[2015-03-18 06:57:42 +0000] [24599] [INFO] Starting gunicorn 19.3.0
+[2015-03-18 06:57:42 +0000] [24599] [INFO] Listening at: unix:/home/ec2-user/src_root/src_invit/run/gunicorn.sock (24599)
+[2015-03-18 06:57:42 +0000] [24599] [INFO] Using worker: sync
+[2015-03-18 06:57:42 +0000] [24606] [INFO] Booting worker with pid: 24606
+[2015-03-18 06:57:42 +0000] [24606] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 507, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 99, in init_process
+    util.set_owner_process(self.cfg.uid, self.cfg.gid)
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/util.py", line 154, in set_owner_process
+    os.setgid(gid)
+OSError: [Errno 1] Operation not permitted
+[2015-03-18 06:57:42 +0000] [24606] [INFO] Worker exiting (pid: 24606)
+Traceback (most recent call last):
+  File "/usr/local/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 189, in run
+    super(Application, self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 174, in run
+    self.manage_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 477, in manage_workers
+    self.spawn_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 541, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 214, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 459, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
